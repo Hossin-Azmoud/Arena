@@ -23,7 +23,7 @@ static unsigned char *s_arena_station(ssize_t byte_count)
 }
 
 
-void *allocate(size_t byte_count)
+unsigned char *allocate(size_t byte_count)
 {
 	return s_arena_station(byte_count);
 }
