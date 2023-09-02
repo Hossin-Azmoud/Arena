@@ -28,3 +28,10 @@ arena_init();
 // valgrind says: All heap blocks were freed -- no leaks are possible
 arena_deallocate();
 ```
+
+# About the api
+## Files
+[Arena.h](https://github.com/Hossin-Azmoud/Arena/blob/main/src/Arena.h)
+[ArenaApi.c](https://github.com/Hossin-Azmoud/Arena/blob/main/src/ArenaApi.c)
+[ArenaMethods.c](https://github.com/Hossin-Azmoud/Arena/blob/main/src/Arena.h)
+
