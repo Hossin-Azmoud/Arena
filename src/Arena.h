@@ -15,7 +15,7 @@ typedef struct arena {
 void          arena_free(Arena *A);
 Arena         *new_arena(size_t cap);
 void          arena_init();
-void		  *allocate(size_t byte_count);
+unsigned char *allocate(size_t byte_count);
 void           arena_deallocate();
 unsigned char *arena_alloc(Arena *A, size_t byte_count);
 

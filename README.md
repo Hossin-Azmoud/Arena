@@ -31,7 +31,31 @@ arena_deallocate();
 
 # About the api
 ## Files
-[Arena.h](https://github.com/Hossin-Azmoud/Arena/blob/main/src/Arena.h)
-[ArenaApi.c](https://github.com/Hossin-Azmoud/Arena/blob/main/src/ArenaApi.c)
-[ArenaMethods.c](https://github.com/Hossin-Azmoud/Arena/blob/main/src/Arena.h)
 
+- [Arena.h](https://github.com/Hossin-Azmoud/Arena/blob/main/src/Arena.h): Arena api header file.
+- [ArenaApi.c](https://github.com/Hossin-Azmoud/Arena/blob/main/src/ArenaApi.c): The file that has the source for an arena interface to manage an entity of a global static arena.
+- [ArenaMethods.c](https://github.com/Hossin-Azmoud/Arena/blob/main/src/Arena.h): arena methods like initializers, allocators and deallocators.
+
+## Funcs
+### Initializers
+```c
+// Creates a new arena with `cap` as an initiall capacity.
+Arena *new_arena(size_t cap);
+// initializer for the global static arena.
+void arena_init();
+```
+### Allocators
+
+```c
+// allocate `byte_count` from the global static arena.
+unsigned char *allocate(size_t byte_count);
+// allocates `byte_count` from the arena (A)
+unsigned char *arena_alloc(Arena *A, size_t byte_count);
+```
+## Deallocators
+```c
+// Frees an arena (A).
+void arena_free(Arena *A);
+// Frees the global arena.
+void arena_deallocate();
+```
