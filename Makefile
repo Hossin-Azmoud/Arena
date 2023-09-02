@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-o main
+CFLAGS=-ggdb -o main
 SRC=./src/*.c
 
 all: main
