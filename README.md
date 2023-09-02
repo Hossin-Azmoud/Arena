@@ -36,6 +36,7 @@ arena_deallocate();
 - [ArenaApi.c](https://github.com/Hossin-Azmoud/Arena/blob/main/src/ArenaApi.c): The file that has the source for an arena interface to manage an entity of a global static arena.
 - [ArenaMethods.c](https://github.com/Hossin-Azmoud/Arena/blob/main/src/Arena.h): arena methods like initializers, allocators and deallocators.
 
+
 ## Funcs
 ### Initializers
 ```c
